@@ -119,8 +119,8 @@ bindsym $mod+q focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "Home "
 set $ws2 "Social "
-set $ws3 "FF "
-set $ws4 "Edi4or "
+set $ws3 "Thunderbird "
+set $ws4 "Working "
 #set $ws1 "1"
 #set $ws2 "2"
 #set $ws3 "3"
@@ -202,7 +202,7 @@ gaps outer 0
 # finds out, if available)
 bar {
 	position top
-		status_command i3blocks -c /home/charlotte/.i3/i3blocks.conf
+		status_command i3blocks -c /home/charlotte/.config/i3blocks/i3blocks.conf
 	colors {
 		background $bg-color
 			separator #757575
