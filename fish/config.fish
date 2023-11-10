@@ -14,5 +14,13 @@ ssh-add /home/charlotte/.ssh/id_gitlab_inria
 ssh-add /home/charlotte/.ssh/id_rennes
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/charlotte/.ghcup/bin # ghcup-env
 set TYPST /home/charlotte/.local/lib/typst
+set TYPST_FONT_PATH /home/charlotte/.local/share/fonts
 starship init fish | source
 alias ls="eza -l --icons=always --group-directories-first --hyperlink --git --git-repos-no-status"
+
+# pnpm
+set -gx PNPM_HOME "/home/charlotte/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

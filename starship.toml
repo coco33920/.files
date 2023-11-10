@@ -137,7 +137,7 @@ format = '[ $symbol ($version) ]($style)'
 [typst]
 symbol = "𝐭"
 style = "bg:#86BBD8 fg:000000"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol gay-($version) ]($style)'
 
 [nodejs]
 symbol = ""
