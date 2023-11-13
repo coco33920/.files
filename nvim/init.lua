@@ -589,6 +589,12 @@ mason_lspconfig.setup_handlers {
 }
 
 
+require "rust-tools".setup {
+    server = {
+        on_attach = on_attach,
+        cmd = { "rustup", "run", "stable", "rust-analyzer" },
+    },
+}
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
