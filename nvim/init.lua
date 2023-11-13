@@ -98,6 +98,7 @@ require('lazy').setup({
 	},
 	"wakatime/vim-wakatime",
   -- Git related plugins
+   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   'simrat39/rust-tools.nvim',
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -186,7 +187,7 @@ require('lazy').setup({
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+    --  vim.cmd.colorscheme 'onedark'
     end,
   },
 
@@ -343,6 +344,7 @@ require('telescope').setup {
   },
 }
 
+vim.cmd.colorscheme "catppuccin"
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
 
