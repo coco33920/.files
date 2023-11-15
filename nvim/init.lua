@@ -37,13 +37,11 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now :)
 --]]
-
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -77,6 +75,9 @@ require('lazy').setup({
 			"ryanoasis/vim-devicons", 
 		}
 	},  
+  {
+    "LazyVim/LazyVim",
+  },
   {'romgrk/barbar.nvim',
     dependencies = {
       'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
@@ -97,6 +98,15 @@ require('lazy').setup({
 		lazy = false,
 	},
 	"wakatime/vim-wakatime",
+{
+        'folke/which-key.nvim',
+        lazy = true,
+    },
+{
+        'akinsho/toggleterm.nvim',
+        tag = "*",
+        config = true
+    },
   -- Git related plugins
    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   'simrat39/rust-tools.nvim',
@@ -260,6 +270,8 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
+    
+ { import = "lazyvim.plugins.extras.ui.mini-starter" },
 }, {})
 
 -- [[ Setting options ]]
@@ -269,6 +281,8 @@ require('lazy').setup({
 -- Set highlight on search
 vim.o.hlsearch = false
 
+require('toggleterm-config')
+require('whichkey')
 -- Make line numbers default
 vim.wo.number = true
 
@@ -320,6 +334,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 vim.keymap.set('n','<C-Left>','<Cmd>BufferPrevious<CR>')
 vim.keymap.set('n','<C-Right>','<Cmd>BufferNext<CR>')
+vim.keymap.set('n','<C-s>','<Cmd>w<CR>')
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
