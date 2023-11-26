@@ -1,9 +1,0 @@
-general_color = 'purple'
-
-[greeting]
-greeting_message = 'Welcome to Calc %version% by %author%, type help for help'
-greeting_color = 'blue'
-
-[prompt]
-prompt = '> '
-prompt_color = 'cyan'
