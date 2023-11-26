@@ -284,6 +284,7 @@ vim.o.hlsearch = false
 
 require('toggleterm-config')
 require('whichkey')
+require('autocmds')
 -- Make line numbers default
 vim.wo.number = true
 
