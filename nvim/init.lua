@@ -294,26 +294,10 @@ require("autocmds")
 require("keymaps")
 require("options")
 require("telescope_config")
+require("tree_config")
 -- Make line numbers default
 
--- empty setup using defaults
-require("nvim-tree").setup()
 
--- OR setup with some options
-require("nvim-tree").setup(
-    {
-        sort_by = "case_sensitive",
-        view = {
-            width = 30
-        },
-        renderer = {
-            group_empty = true
-        },
-        filters = {
-            dotfiles = true
-        }
-    }
-)
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
 require("telescope").setup {
