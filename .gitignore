@@ -1,0 +1,8 @@
+*
+!.gitignore
+!fish/config.fish
+!i3/config
+!i3blocks/config
+!i3blocks/i3blocks.conf
+!nvim/
+!typst_template
