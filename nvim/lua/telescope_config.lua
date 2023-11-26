@@ -119,3 +119,15 @@ vim.defer_fn(
     end,
     0
 )
+
+
+require("telescope").setup {
+    defaults = {
+        mappings = {
+            i = {
+                ["<C-u>"] = false,
+                ["<C-d>"] = false
+            }
+        }
+    }
+}

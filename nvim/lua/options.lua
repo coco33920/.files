@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.o.hlsearch = false
 
 vim.wo.number = true
