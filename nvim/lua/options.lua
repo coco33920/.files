@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.o.hlsearch = false
 
