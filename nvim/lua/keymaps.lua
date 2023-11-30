@@ -15,7 +15,6 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open float
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 vim.keymap.set("n", "<C-Left>", "<Cmd>BufferPrevious<CR>")
 vim.keymap.set("n", "<C-Right>", "<Cmd>BufferNext<CR>")
-vim.keymap.set("n", "<C-s>", "<Cmd>w<CR>")
 vim.keymap.set("n", "<C-a>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<C-b>", "<Cmd>NvimTreeFocus<CR>")
 -- [[ Highlight on yank ]]
@@ -31,6 +30,7 @@ vim.api.nvim_create_autocmd(
         pattern = "*"
     }
 )
+
 
 
 -- See `:help telescope.builtin`
