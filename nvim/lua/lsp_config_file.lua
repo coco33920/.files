@@ -71,6 +71,7 @@ local servers = {
     -- rust_analyzer = {},
     -- tsserver = {},
     -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+    pylyzer = {},
     html = {},
     clangd = {},
     typst_lsp = {exportPdf = "never"},

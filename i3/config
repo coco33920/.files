@@ -53,8 +53,7 @@ floating_modifier $mod
 for_window [class="^.*"] border pixel 0
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
-
+bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+Shift+A kill
 

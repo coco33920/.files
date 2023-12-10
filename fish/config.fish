@@ -1,7 +1,7 @@
 
 function fish_greeting
     echo ~~ Hello Sweetie ~~
-    echo Tellng you what time it is would be revealing ~~ spoilers ~~
+    echo Telling you what time it is would be revealing ~~ spoilers ~~
 end
 
 
@@ -13,6 +13,7 @@ ssh-add /home/charlotte/.ssh/id_gitlab_istic
 ssh-add /home/charlotte/.ssh/id_rennes
 set TYPST /home/charlotte/.local/lib/typst
 set TYPST_FONT_PATH /home/charlotte/.local/share/fonts
+set HOSTALIASES /home/charlotte/host.aliases
 starship init fish | source
 alias ls="eza -l --icons=always --group-directories-first --hyperlink --git --git-repos-no-status"
 
