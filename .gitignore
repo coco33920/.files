@@ -6,5 +6,5 @@
 !i3blocks/config
 !i3blocks/i3blocks.conf
 !nvim/
-!kitty/
+!kitty/*
 !typst_template
