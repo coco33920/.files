@@ -12,7 +12,7 @@ ssh-add /home/charlotte/.ssh/id_github
 ssh-add /home/charlotte/.ssh/id_github_rennes
 #ssh-add /home/charlotte/.ssh/id_rennes
 set TYPST /home/charlotte/.local/lib/typst
-set PATH $PATH:/home/charlotte/.cargo/bin:/home/charlotte/.local/bin
+set PATH $PATH:/home/charlotte/.cargo/bin:/home/charlotte/.local/bin:/usr/sbin
 set TYPST_FONT_PATH /usr/share/fonts
 #set HOSTALIASES /home/charlotte/host.aliases
 starship init fish | source
