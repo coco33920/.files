@@ -5,14 +5,15 @@ function fish_greeting
 end
 
 
-eval (opam env)
+#eval (opam env)
 setsid wal -i ~/Images/bg.png 2> /dev/null
 fish_ssh_agent
 ssh-add /home/charlotte/.ssh/id_github
-ssh-add /home/charlotte/.ssh/id_gitlab_istic
-ssh-add /home/charlotte/.ssh/id_rennes
+ssh-add /home/charlotte/.ssh/id_github_rennes
+#ssh-add /home/charlotte/.ssh/id_rennes
 set TYPST /home/charlotte/.local/lib/typst
-set TYPST_FONT_PATH /home/charlotte/.local/share/fonts
+set PATH $PATH:/home/charlotte/.cargo/bin:/home/charlotte/.local/bin
+set TYPST_FONT_PATH /usr/share/fonts
 set HOSTALIASES /home/charlotte/host.aliases
 starship init fish | source
 alias ls="eza -l --icons=always --group-directories-first --hyperlink --git --git-repos-no-status"
