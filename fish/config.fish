@@ -14,7 +14,7 @@ ssh-add /home/charlotte/.ssh/id_github_rennes
 set TYPST /home/charlotte/.local/lib/typst
 set PATH $PATH:/home/charlotte/.cargo/bin:/home/charlotte/.local/bin
 set TYPST_FONT_PATH /usr/share/fonts
-set HOSTALIASES /home/charlotte/host.aliases
+#set HOSTALIASES /home/charlotte/host.aliases
 starship init fish | source
 alias ls="eza -l --icons=always --group-directories-first --hyperlink --git --git-repos-no-status"
 
