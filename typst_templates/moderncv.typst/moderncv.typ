@@ -74,7 +74,7 @@
       inset: (right: grid_column_gutter, bottom: 0.1em),
       rect(fill: main_color, width: left_column_size, height: 0.25em)
     )
-    #text(element.body, fill: heading_color, weight: 400)
+    #text(element.body, size: 1em,fill: heading_color, weight: 400)
   ]
 
   show heading.where(level: 2): element => [
