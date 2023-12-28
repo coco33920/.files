@@ -2,10 +2,11 @@
   title: none,
   presents: (),
   signature: "",
+  sfont: "Monaspace Xenon",
   body
 ) = {
 
-  set text(weight: "bold", font: "Monaspace Xenon", size: 16pt, lang: "fr")   
+  set text(weight: "bold", font: sfont, size: 16pt, lang: "fr")   
   set align(center) 
   if title != none {
       title

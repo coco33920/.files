@@ -22,7 +22,8 @@
   lang: "en",
 
   // The letter's content.
-  body
+  body,
+  signature: none,
 ) = {
   // Configure page and text properties.
   set page(margin: (top: 2cm))
@@ -66,6 +67,9 @@
   body
   v(1.25cm)
   name
+  if signature != none {
+    signature
+  }
   if ps != none {
     v(1.25cm)
     emph([PS: #ps])
