@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+cd $1
+git init
+touch makefile
+touch main.typ
+echo "compile:" >> makefile
+echo "	typst c main.typ" >> makefile
+echo "watch: compile" >> makefile
+echo "	evince main.pdf &" >> makefile
+echo "	typst w main.typ"  >> makefile
+ln -s /home/charlotte/.config/typst_templates templates

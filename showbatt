@@ -1,0 +1,19 @@
+#!/bin/bash
+C=$(cat /sys/class/power_supply/BAT1/capacity)
+D=$(cat /sys/class/power_supply/BAT1/status)
+STR=""
+if [ "$D" = "Charging" ]; then 
+	STR=" "
+else 
+	STR=" "
+fi 
+STR="$C $STR"
+echo $STR
+echo " "
+if [ "$C" -lt "20" ]; then
+	echo \#FF1205
+elif [ "$C" -lt "50" ]; then
+	echo \#FFC300 
+else
+	echo \#38B261
+fi
