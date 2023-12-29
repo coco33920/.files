@@ -223,5 +223,6 @@ require("options")
 require("telescope_config")
 require("tree_config")
 require("lsp_config_file")
+require("cat_config")
 
 vim.cmd.colorscheme "catppuccin"

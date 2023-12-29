@@ -1,13 +1,13 @@
 *
-!.tmux/
+!.tmux/*
 !.gitignore
 !fish/config.fish
-!i3/config
 !i3blocks/config
+!sway/*
 !i3blocks/i3blocks.conf
-!nvim/
+!nvim/*
 !kitty/kitty.conf
-!neofetch/
+!neofetch/*
 !typst_template
 !initialise_typst
 !showbatt
