@@ -11,7 +11,6 @@ ssh-add /home/charlotte/.ssh/id_github_rennes
 set TYPST /home/charlotte/.config/typst_templates
 set PATH $PATH:/home/charlotte/.cargo/bin:/home/charlotte/.local/bin:/usr/sbin
 set TYPST_FONT_PATH /usr/share/fonts
-set WAYLAND_DISPLAY true
 set EDITOR nvim
 set VISUAL nvim
 starship init fish | source

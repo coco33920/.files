@@ -33,14 +33,12 @@ font pango:monospace 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-bindsym $mod+Ctrl+l exec cool_swaylock 
-bindswitch lid:on exec cool_swaylock
+bindsym $mod+Ctrl+l exec swaylock --screenshots --clock --indicator --indicator-radius 100 --effect-blur 7x5 --ring-color 55cdfc --key-hl-color f7a8d8 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/kdeconnectd
-exec --no-startup-id swayidle -w timeout 30 cool_swaylock timeout 300 'systemctl suspend' before-sleep cool_swaylock
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
