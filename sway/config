@@ -62,10 +62,6 @@ bindsym $mod+Shift+A kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -225,4 +221,3 @@ client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
 exec /home/charlotte/.local/bin/jetbrains-toolbox --minimize
 exec --no-startup-id /opt/piavpn/bin/pia-client --quiet
-exec mount /home/charlotte/data
