@@ -194,7 +194,6 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+s reboot
 
 exec_always setwall set ~/Pictures/bg.png -c sway
-exec compton -f
 
 #gaps
 gaps inner 10
