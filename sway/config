@@ -31,7 +31,6 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 bindsym $mod+Ctrl+l exec cool_swaylock 
 bindswitch lid:on exec cool_swaylock
@@ -39,7 +38,7 @@ bindswitch lid:on exec cool_swaylock
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/kdeconnectd
-exec --no-startup-id swayidle -w timeout 30 cool_swaylock timeout 300 'systemctl suspend' before-sleep cool_swaylock
+exec --no-startup-id swayidle -w timeout 60 cool_swaylock
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
